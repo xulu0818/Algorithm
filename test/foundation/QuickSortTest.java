@@ -24,6 +24,7 @@ public class QuickSortTest {
   @Test
 public void testQuickSort() {
     Mockito.when(solution.quickSort(new int[]{1,4,3,2,5})).thenReturn(new int[]{1,2,3,4,5});
+    System.out.println(Arrays.toString(solution.quickSort(new int[]{1,4,3,2,5})));
     Mockito.when(solution.quickSort(null)).thenReturn(null);
   }
 }

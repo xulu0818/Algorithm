@@ -2,6 +2,9 @@ package foundation;
 
 import foundation.utilities.ListNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Linkedlist {
   public static void main(String[] args){
     Linkedlist linkedlist = new Linkedlist();
@@ -19,6 +22,15 @@ public class Linkedlist {
     linkedlist.printHelper(reverseResult);
     ListNode reverseRecurResult = linkedlist.reverseLinkedListRecur(reverseResult);
     linkedlist.printHelper(reverseRecurResult);
+
+    List<Integer> test = new ArrayList<>();
+    for (int i = 0; i < 4; i++){
+      test.add(i);
+    }
+    System.out.println(test);
+    test.add(1,5);
+    System.out.println(test);
+
   }
 
   //T: O(n); S: O(1)
